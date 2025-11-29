@@ -1,4 +1,5 @@
 import BaseBtn from "./BaseBtn";
+import stylex from "@stylexjs/stylex";
 import type { IconType } from "react-icons";
 
 type IconBtnProps = {
@@ -7,29 +8,24 @@ type IconBtnProps = {
   link?: string;
 }
 
+const styles = stylex.create({
+  btnIcon: {
+    display: "inline-flex",
+    fontSize: "1.4rem",
+    color: "#555",
+    transition: "color 0.2s ease, transform 0.2s ease",
+    ":hover": {
+      color: "red",
+      transform: "scale(1.1)"
+    }
+  }
+});
+
 const IconBtn = (props: IconBtnProps) => {
   return (
-    <>
-      <style>{`
-        .btn-icon{
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.5rem;
-          color: var(--subtext);
-          transition: 
-        }
-
-        .btn-icon:hover {
-          color: var(--text);
-          
-        }
-      `}</style>
-
-      <BaseBtn action={props.action} link={props.link}>
-        <props.Icon className="btn-icon" />
-      </BaseBtn>
-    </>
+    <BaseBtn action={props.action} link={props.link}>
+      <props.Icon className={stylex(styles.btnIcon)} />
+    </BaseBtn>
   );
 };
 
