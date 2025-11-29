@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
+
+/* Components */
+import { Link } from "react-router-dom";
+
 
 export type BaseBtnProps = {
   children: ReactNode;
@@ -10,13 +13,13 @@ export type BaseBtnProps = {
 const BaseBtn = (props: BaseBtnProps) => {
   if (props.link)
     return (
-      <Link style={{all: "unset"}} to={props.link} onClick={props.action}>
+      <Link to={props.link} onClick={props.action}>
         {props.children}
       </Link>
     );
 
   return (
-    <button style={{all: "unset"}} onClick={props.action}>
+    <button onClick={props.action}>
       {props.children}
     </button>
   );

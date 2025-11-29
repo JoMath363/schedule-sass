@@ -10,12 +10,15 @@ type IconBtnProps = {
 
 const styles = stylex.create({
   btnIcon: {
-    display: "inline-flex",
-    fontSize: "1.4rem",
-    color: "#555",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "1.5rem",
+    color: "var(--subtext)",
     transition: "color 0.2s ease, transform 0.2s ease",
+    cursor: "pointer",
     ":hover": {
-      color: "red",
+      color: "var(--text)",
       transform: "scale(1.1)"
     }
   }

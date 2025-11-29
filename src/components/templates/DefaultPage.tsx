@@ -1,4 +1,4 @@
-import Header from "../organisms/Header/Header";
+import Header from "../organisms/Header";
 
 const DefaultPage = () => {
   return (

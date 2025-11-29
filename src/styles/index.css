@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+button {
+  all: unset;
+}
+
 body {
   /* Colors */
   --background:#E0E0E0;
@@ -14,10 +18,4 @@ body {
   --subtext: #424242;
 
   background: var(--background);
-}
-
-.flex-container-with-gap {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
 }
