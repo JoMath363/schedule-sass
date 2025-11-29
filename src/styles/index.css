@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Colors */
+  --background:#E0E0E0;
+  --surface: #F7F7F7;
+  --primary: #B00303;
+  --primary-dark: #7B0000;
+  --text: #1F1F1F;
+  --subtext: #424242;
+
+  background: var(--background);
+}
+
+.flex-container-with-gap {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
