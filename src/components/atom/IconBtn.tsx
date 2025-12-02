@@ -3,9 +3,9 @@ import stylex from "@stylexjs/stylex";
 import type { IconType } from "react-icons";
 
 type IconBtnProps = {
-  icon: IconType;
   action: () => void;
   link?: string;
+  icon: IconType;
 }
 
 const styles = stylex.create({

@@ -3,7 +3,8 @@ import type { IconType } from "react-icons";
 import BaseBtn from "./BaseBtn";
 
 type SecondaryBtnProps = {
-  link: string,
+  action?: () => void,
+  link?: string,
   icon?: IconType,
   text: string
 }
@@ -23,7 +24,7 @@ const styles = stylex.create({
 
 const SecondaryBtn = (props: SecondaryBtnProps) => {
   return (
-    <BaseBtn className={stylex(styles.SecondaryBtn)} link={props.link}>
+    <BaseBtn className={stylex(styles.SecondaryBtn)} action={props.action} link={props.link}>
       {props.icon && <props.icon />}{props.text}
     </BaseBtn>
   );
