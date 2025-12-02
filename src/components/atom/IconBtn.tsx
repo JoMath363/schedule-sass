@@ -3,13 +3,13 @@ import stylex from "@stylexjs/stylex";
 import type { IconType } from "react-icons";
 
 type IconBtnProps = {
-  Icon: IconType;
+  icon: IconType;
   action: () => void;
   link?: string;
 }
 
 const styles = stylex.create({
-  btnIcon: {
+  BtnIcon: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -27,7 +27,7 @@ const styles = stylex.create({
 const IconBtn = (props: IconBtnProps) => {
   return (
     <BaseBtn action={props.action} link={props.link}>
-      <props.Icon className={stylex(styles.btnIcon)} />
+      <props.icon className={stylex(styles.BtnIcon)} />
     </BaseBtn>
   );
 };

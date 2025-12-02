@@ -1,9 +1,27 @@
+import type { ReactNode } from "react";
 import Header from "../organisms/Header";
+import stylex from "@stylexjs/stylex";
 
-const DefaultPage = () => {
+type DefaultPageProps = {
+  children: ReactNode
+}
+
+const styles = stylex.create({
+  Main: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "1.5rem",
+    padding: "2rem"
+  }
+});
+
+const DefaultPage = (props: DefaultPageProps) => {
   return (
     <>
-     <Header />
+      <Header />
+      <main className={stylex(styles.Main)}>
+        {props.children}
+      </main>
     </>
   );
 };
