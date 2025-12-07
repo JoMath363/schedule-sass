@@ -1,7 +1,7 @@
 import stylex from "@stylexjs/stylex";
 import { PiHandWavingBold, PiCalendarDotsBold } from "react-icons/pi";
-import { capitalizeWord } from "../../utils/format";
 import SecondaryBtn from "../atom/SecondaryBtn";
+import { getCurrentMonth } from "../../utils/helper";
 
 const styles = stylex.create({
   WelcomeMessage: {
@@ -25,10 +25,7 @@ const WelcomeMessage = () => {
     return "Boa noite";
   };
 
-  const getMonth = () => {
-    const monthName = new Date().toLocaleString("pt-BR", { month: "long" });
-    return capitalizeWord(monthName);
-  };
+  
 
   return (
     <div>
@@ -39,7 +36,7 @@ const WelcomeMessage = () => {
       <SecondaryBtn
         link={`/calendar/${new Date().getMonth()}`}
         icon={PiCalendarDotsBold}
-        text={`Veja sua agenda de ${getMonth()}`}
+        text={`Veja sua agenda de ${getCurrentMonth()}`}
       />
     </div>
   );

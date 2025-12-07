@@ -8,6 +8,7 @@ type DefaultPageProps = {
 
 const styles = stylex.create({
   Main: {
+    height: "calc(100dvh - 3.5rem)",
     display: "flex",
     flexDirection: "column",
     gap: "1.5rem",

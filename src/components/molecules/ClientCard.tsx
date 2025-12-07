@@ -1,5 +1,5 @@
 import stylex from "@stylexjs/stylex";
-import SecondaryBtn from "../../components/atom/SecondaryBtn";
+import SecondaryBtn from "../atom/SecondaryBtn";
 import { PiUserBold, PiArrowUpRight } from "react-icons/pi";
 
 const styles = stylex.create({
