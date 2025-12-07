@@ -1,8 +1,8 @@
 import stylex from "@stylexjs/stylex";
-import PrimaryBtn from "../atom/PrimaryBtn";
-import SelectInput from "../atom/SelectInput";
 import { PiPlusBold } from "react-icons/pi";
-import { useCalendar } from "../../services/calendar/useCalendar";
+import { useCalendar } from "../service/useCalendar";
+import SelectInput from "../../../shared/atom/SelectInput";
+import PrimaryBtn from "../../../shared/atom/PrimaryBtn";
 
 const styles = stylex.create({
   CalendarBar: {
@@ -23,15 +23,15 @@ const CalendarBar = () => {
 
 
   const yearOptions = [
-  { label: "2025", value: "2025" },
-  { label: "2024", value: "2024" }
-];
+    { label: "2025", value: "2025" },
+    { label: "2024", value: "2024" }
+  ];
 
-const monthOptions = [
-  { label: "Janeiro", value: "0" },
-  { label: "Fevereiro", value: "1" },
-  { label: "Dezembro", value: "11" }
-];
+  const monthOptions = [
+    { label: "Janeiro", value: "0" },
+    { label: "Fevereiro", value: "1" },
+    { label: "Dezembro", value: "11" }
+  ];
 
   return (
     <div className={stylex(styles.CalendarBar)}>

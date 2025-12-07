@@ -1,23 +1,23 @@
 import stylex from "@stylexjs/stylex";
-import WelcomeMessage from "../molecules/WelcomeMessage";
-import PrimaryBtn from "../atom/PrimaryBtn";
 import { PiPlusBold } from "react-icons/pi";
+import PrimaryBtn from "../../../shared/atom/PrimaryBtn";
+import WelcomeMessage from "../../../shared/organisms/WelcomeMessage";
 
 const styles = stylex.create({
-  HomeBar: {
+  ScheduleBar: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center"
   }
 });
 
-const HomeBar = () => {
+const ScheduleBar = () => {
   return (
-    <div className={stylex(styles.HomeBar)}>
+    <div className={stylex(styles.ScheduleBar)}>
       <WelcomeMessage />
       <PrimaryBtn icon={PiPlusBold} text="Agendar" link="" />
     </div>
   );
 };
 
-export default HomeBar;
+export default ScheduleBar;

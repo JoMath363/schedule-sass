@@ -34,7 +34,7 @@ const WelcomeMessage = () => {
         <PiHandWavingBold />
       </p>
       <SecondaryBtn
-        link={`/calendar/${new Date().getMonth()}`}
+        link="/calendar"
         icon={PiCalendarDotsBold}
         text={`Veja sua agenda de ${getCurrentMonth()}`}
       />

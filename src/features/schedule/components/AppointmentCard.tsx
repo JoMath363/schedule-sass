@@ -1,5 +1,5 @@
 import stylex from "@stylexjs/stylex";
-import SecondaryBtn from "../atom/SecondaryBtn";
+import SecondaryBtn from "../../../shared/atom/SecondaryBtn";
 import {PiCalendarCheckBold } from "react-icons/pi";
 
 const styles = stylex.create({

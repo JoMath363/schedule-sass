@@ -4,8 +4,8 @@ import stylex from "@stylexjs/stylex";
 import SearchBar from "../molecules/SearchBar";
 import IconBtn from "../atom/IconBtn";
 import { PiCalendarDotsBold, PiBellBold } from "react-icons/pi";
-import ProfileDropdown from "../molecules/ProfileDropdown";
 import { Link } from "react-router-dom";
+import ProfileDropdown from "../../features/profile/components/ProfileDropdown";
 
 const styles = stylex.create({
   Header: {

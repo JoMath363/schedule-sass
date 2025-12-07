@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Header from "../organisms/Header";
 import stylex from "@stylexjs/stylex";
+import Header from "../organisms/Header";
 
 type DefaultPageProps = {
   children: ReactNode
@@ -12,7 +12,7 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "column",
     gap: "1.5rem",
-    padding: "2rem"
+    padding: "1.5rem 2rem"
   }
 });
 

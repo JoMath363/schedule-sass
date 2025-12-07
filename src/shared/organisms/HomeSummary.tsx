@@ -1,6 +1,6 @@
 import stylex from "@stylexjs/stylex";
-import ClientCard from "../molecules/ClientCard";
-import AppointmentCard from "../molecules/AppointmentCard";
+import ClientCard from "../../features/client/components/ClientCard";
+import AppointmentCard from "../../features/schedule/components/AppointmentCard";
 
 const styles = stylex.create({
   HomeSummary: {

@@ -1,7 +1,7 @@
-import DefaultPage from "../components/templates/DefaultPage";
-import CalendarTable from "../components/organisms/CalendarTable";
-import CalendarBar from "../components/organisms/CalendarBar";
-import { CalendarProvider } from "../services/calendar/CalendarProvider";
+import DefaultPage from "../shared/templates/DefaultPage";
+import CalendarTable from "../features/calendar/components/CalendarTable";
+import CalendarBar from "../features/calendar/components/CalendarBar";
+import { CalendarProvider } from "../features/calendar/service/CalendarProvider";
 
 const Calendar = () => {
   return (

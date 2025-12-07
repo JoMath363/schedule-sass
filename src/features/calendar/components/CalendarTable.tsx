@@ -1,6 +1,6 @@
 import stylex from "@stylexjs/stylex";
-import { useCalendar } from "../../services/calendar/useCalendar";
-import CalendarDay from "../molecules/CalendarDay";
+import { useCalendar } from "../service/useCalendar";
+import CalendarDay from "./CalendarDay";
 
 const styles = stylex.create({
   CalendarTable: {
@@ -16,7 +16,7 @@ const styles = stylex.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "var(--subtext)",
+    background: "var(--text)",
     color: "white",
     height: "2.5rem",
   },
@@ -24,7 +24,10 @@ const styles = stylex.create({
     display: "grid",
     gridTemplateColumns: "repeat(7, 1fr)",
     gridTemplateRows: "repeat(6, 1fr)",
-    height: "100%"
+    height: "100%",
+    border: "solid 1px var(--text)",
+    background: "var(--text)",
+    gap: "1px"
   }
 });
 
