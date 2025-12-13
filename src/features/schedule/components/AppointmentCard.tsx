@@ -1,53 +1,50 @@
+
 import stylex from "@stylexjs/stylex";
-import SecondaryBtn from "../../../shared/atom/SecondaryBtn";
-import {PiCalendarCheckBold } from "react-icons/pi";
+import { formatTime } from "../../../utils/format";
+import { Link } from "react-router-dom";
+
+export type AppointmentCardProps = {
+  id: string;
+  time: string;
+  title: string;
+  client: string;
+  top?: number;
+  left?: number;
+};
 
 const styles = stylex.create({
   AppointmentCard: {
-    display: "flex",
-    flexDirection: "column",
+    position: "absolute",
+    width: "250px",
+    padding: "0.5rem",
+    border: "solid var(--text) 1px",
     background: "var(--surface)",
-    width: "100%",
-    height: "13.5rem",
-    borderRadius: "0.5rem",
-    padding: "1rem 0",
-    color: "var(--subtext)",
-    gap: "1.5rem"
-  },
-  AppointmentCardHead: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0 1rem",
-  },
-  AppointmentCardTitle: {
-    fontSize: "1.2rem"
-  },
-  AppointmentCardBody: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0 1rem",
+    textDecoration: "none",
   }
 });
 
-const AppointmentCard = () => {
-  return (
-    <div className={stylex(styles.AppointmentCard)}>
-      <div className={stylex(styles.AppointmentCardHead)}>
-        <h2 className={stylex(styles.AppointmentCardTitle)}>Agendamentos Próximos </h2>
-        <SecondaryBtn
-          link="/appointments"
-          text="Agendamentos"
-          icon={PiCalendarCheckBold}
-        />
-      </div>
+const AppointmentCard = (props: AppointmentCardProps) => {
+  const date = new Date(props.time);
 
-      <div className={stylex(styles.AppointmentCardBody)}>
-        
-      </div>
-    </div>
+  return (
+    <Link
+      to={`/appointment/${props.id}`}
+      className={stylex(styles.AppointmentCard)}
+      style={{
+        top: `calc(var(--scheduleRowHeight) * ${props.top})`,
+        left: `calc(255px * ${props.left})`
+      }}
+    >
+      <p>
+        {formatTime(date)}
+      </p>
+      <h2>
+        {props.title}
+      </h2>
+      <h3>
+        {props.client}
+      </h3>
+    </Link>
   );
 };
 

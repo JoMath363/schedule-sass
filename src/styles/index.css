@@ -19,6 +19,8 @@ body {
   --text: #1F1F1F;
   --subtext: #424242;
 
+  --scheduleRowHeight: 15rem;
+
   background: var(--background);
   font-family: "Roboto", sans-serif;
 }

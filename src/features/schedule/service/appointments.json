@@ -1,0 +1,74 @@
+{
+  "appointments": [
+    {
+      "id": "1",
+      "title": "Avaliação Física",
+      "description": "Teste de resistência",
+      "client": "Thiago",
+      "time": "2025-06-13T10:07:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Reunião Estratégica",
+      "description": "Planejamento trimestral",
+      "client": "Helena",
+      "time": "2025-06-13T10:50:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Sessão de Fotos",
+      "description": "Material para campanha",
+      "client": "Camila",
+      "time": "2025-06-13T11:18:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Atendimento Jurídico",
+      "description": "Revisão contratual",
+      "client": "Diego",
+      "time": "2025-06-13T12:05:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Consulta Ortopédica",
+      "description": "Dor lombar",
+      "client": "Valéria",
+      "time": "2025-06-13T12:48:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Workshop Técnico",
+      "description": "Atualização de ferramentas",
+      "client": "Fábio",
+      "time": "2025-06-13T13:37:00.000Z"
+    },
+    {
+      "id": "7",
+      "title": "Sessão de Coaching",
+      "description": "Metas profissionais",
+      "client": "Larissa",
+      "time": "2025-06-13T14:06:00.000Z"
+    },
+    {
+      "id": "8",
+      "title": "Inspeção de Sistema",
+      "description": "Checagem trimestral",
+      "client": "Marcelo",
+      "time": "2025-06-13T15:21:00.000Z"
+    },
+    {
+      "id": "9",
+      "title": "Revisão de Projeto",
+      "description": "Sprint final",
+      "client": "Isabela",
+      "time": "2025-06-13T16:45:00.000Z"
+    },
+    {
+      "id": "10",
+      "title": "Aula de Música",
+      "description": "Violão intermediário",
+      "client": "Henrique",
+      "time": "2025-06-13T17:12:00.000Z"
+    }
+  ]
+}

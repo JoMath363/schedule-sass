@@ -3,7 +3,7 @@ import stylex from "@stylexjs/stylex";
 import type { IconType } from "react-icons";
 
 type IconBtnProps = {
-  action: () => void;
+  action?: () => void;
   link?: string;
   icon: IconType;
 }

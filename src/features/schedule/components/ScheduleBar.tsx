@@ -1,7 +1,7 @@
 import stylex from "@stylexjs/stylex";
-import { PiPlusBold } from "react-icons/pi";
+import { PiArrowLeftBold, PiPlusBold } from "react-icons/pi";
 import PrimaryBtn from "../../../shared/atom/PrimaryBtn";
-import WelcomeMessage from "../../../shared/organisms/WelcomeMessage";
+import IconBtn from "../../../shared/atom/IconBtn";
 
 const styles = stylex.create({
   ScheduleBar: {
@@ -14,7 +14,7 @@ const styles = stylex.create({
 const ScheduleBar = () => {
   return (
     <div className={stylex(styles.ScheduleBar)}>
-      <WelcomeMessage />
+      <IconBtn icon={PiArrowLeftBold} link="/calendar"/>
       <PrimaryBtn icon={PiPlusBold} text="Agendar" link="" />
     </div>
   );

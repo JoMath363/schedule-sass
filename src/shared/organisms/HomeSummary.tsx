@@ -1,6 +1,6 @@
 import stylex from "@stylexjs/stylex";
 import ClientCard from "../../features/client/components/ClientCard";
-import AppointmentCard from "../../features/schedule/components/AppointmentCard";
+import NextAppointments from "../../features/schedule/components/NextAppointments";
 
 const styles = stylex.create({
   HomeSummary: {
@@ -15,7 +15,7 @@ const HomeSummary = () => {
   return (
     <div className={stylex(styles.HomeSummary)}>
       <ClientCard />
-      <AppointmentCard />
+      <NextAppointments />
     </div>
   );
 };
